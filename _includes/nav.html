@@ -1,0 +1,22 @@
+<div class="nav-inner">
+  <div class="nav-main">
+    <h1>
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+        {{ site.title | escape }}
+      </a>
+    </h1>
+    <div class="description">
+      <p>{{- site.description | escape -}}</p>
+    </div>
+  </div>
+  <h3>
+    <a href="{% link about.html %}">About</a>
+  </h3>
+  <h3>
+    <a href="{% link posts_index.html %}">Posts</a>
+  </h3>
+
+  <div class="social">
+    {%- include social.html -%}
+  </div>
+</div>

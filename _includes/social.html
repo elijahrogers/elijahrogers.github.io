@@ -1,0 +1,36 @@
+<div class="social-icon">
+  <a class="u-email" href="mailto:{{ site.email }}">
+    <i class="far fa-envelope"></i>
+    {{ site.email }}
+  </a>
+</div>
+{%- if site.github_username -%}
+<div class="social-icon">
+  <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}">
+    <i class="fab fa-github"></i>
+    <span class="username">{{ site.github_username| escape }}</span>
+  </a>
+</div>
+{%- endif -%}
+{%- if site.linkedin_username -%}
+<div class="social-icon">
+  <a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}">
+    <svg class="svg-icon">
+      <use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}">
+      </use>
+    </svg>
+    <span class="username">{{ site.linkedin_username| escape }}</span>
+  </a>
+</div>
+{%- endif -%}
+{%- if site.rss -%}
+<div class="social-icon">
+  <a href="{{ 'feed.xml' | relative_url }}">
+    <svg class="svg-icon">
+      <use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}">
+      </use>
+    </svg>
+    <span>{{ site.rss | escape }}</span>
+  </a>
+</div>
+{%- endif -%}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <link href="{{site.baseurl}}css/common.css" rel="stylesheet">
+  <script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+  <body>
+    <div class="nav">
+      {%- include nav.html -%}
+    </div>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+  </body>
+</html>
