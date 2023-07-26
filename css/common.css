@@ -1,10 +1,10 @@
 html, body {
-  font-family: "Helvetica Neue", Helvetica, apple-system, BlinkMacSystemFont, serif;
-  background-color: #000;
+  font-family: "Cardo", "Helvetica Neue", Helvetica, apple-system, BlinkMacSystemFont, serif;
+  background-color: #eae0d5;
 }
 
 body {
-  color: white;
+  color: #22333b;
   display: flex;
   flex-direction: column;
 }
@@ -14,43 +14,54 @@ body {
 }
 
 p {
-  color: #9e9ea0;
+  color: #023047;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #fff;
+  color: #22333b;
 }
 
 a {
-  color: #83ACD8;
+  color: #023047;
   text-decoration: none;
 }
 
 a:visited, a:hover{
-  color: #546D4A;
+  color: #22333b;
 }
 
 .site-title, .site-title:visited {
-  color: #fff;
+  color: #22333b;
   text-decoration: none;
 }
 
 code, pre {
-  background-color: #454a52;
+  background-color: #454A52;
   border: none;
+  color: #eae0d5;
+}
+
+figure.highlight {
+  border-radius: 15px;
+}
+
+code.language-plaintext {
+  padding: .25rem;
 }
 
 .highlight {
-  background-color: #000;
+  background-color: #454A52;
+  color: #eae0d5;
+  padding: .5rem;
 }
 
 .site-header {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #023047;
   border-top: none;
 }
 
 .site-footer {
-  border-top: 1px solid white;
+  border-top: 1px solid #023047;
 }
 
 .nav {
@@ -96,7 +107,12 @@ code, pre {
 }
 
 time {
-  color: white;
+  /* color: #22333b; */
+  /* color: #B17151; */
+  /* color: #5C7A52;
+  color: #83ACD8;
+  color: #D9D4C0; */
+  color: #990f3d;
 }
 
 .description {

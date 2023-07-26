@@ -24,6 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Full Stack Ruby on Rails Developer
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://elijahrogers.dev" # the base hostname & protocol for your site, e.g. http://example.com
+root: "http://elijahrogers.dev/about.html"
 twitter_username:
 github_username:  elijahrogers
 
