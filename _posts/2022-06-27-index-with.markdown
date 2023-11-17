@@ -2,7 +2,7 @@
 layout: post
 title:  "Index with"
 date:   2022-06-27 08:38:15 -0800
-categories: rails enumerable
+tags: rails enumerable
 excerpt_separator: <!--more-->
 ---
 
