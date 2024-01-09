@@ -1,6 +1,6 @@
 html, body {
   font-family: "Cardo", "Helvetica Neue", Helvetica, apple-system, BlinkMacSystemFont, serif;
-  background-color: #eae0d5;
+  background-color: #FFFAF6;
 }
 
 body {
@@ -19,20 +19,24 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #22333b;
+  color: #191308;
+  font-weight: 400;
+  > a {
+    color: #191308;
+  }
 }
 
 a {
-  color: #023047;
+  color: #606c38;
   text-decoration: none;
 }
 
 a:visited, a:hover{
-  color: #22333b;
+  color: #606c38;
 }
 
 .site-title, .site-title:visited {
-  color: #22333b;
+  color: #191308;
   text-decoration: none;
 }
 
@@ -108,12 +112,8 @@ code.language-plaintext {
 }
 
 time {
-  /* color: #22333b; */
-  /* color: #B17151; */
-  /* color: #5C7A52;
-  color: #83ACD8;
-  color: #D9D4C0; */
-  color: #990f3d;
+  color: #283618;
+  text-decoration: underline;
 }
 
 .description {
