@@ -54,10 +54,19 @@ code.language-plaintext {
   padding: .25rem;
 }
 
+blockquote {
+  padding: 0.5em 10px;
+  margin: 0;
+  border-left: 4px solid #d0d7de;
+  color: #57606a;
+  background-color: #f6f8fa;
+}
+
 .highlight {
   background-color: #454A52;
   color: #eae0d5;
   padding: .5rem;
+  overflow-x: scroll;
 }
 
 .site-header {
@@ -72,10 +81,6 @@ code.language-plaintext {
 .nav {
   padding: 1.5rem;
   order: 4;
-}
-
-.wrapper {
-  padding: 1.5rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -104,7 +109,12 @@ code.language-plaintext {
 }
 
 .post-title {
-  font-size: 5rem;
+  font-size: 3rem;
+  margin-top: 0rem;
+
+  @media (min-width: 1024px) {
+    font-size: 5rem;
+  }
 }
 
 .social_icon {
@@ -118,6 +128,20 @@ time {
 
 .description {
   font-weight: 300;
+}
+
+img {
+  max-width: 75%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Works as a caption */
+img + em {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  display: block;
+  text-align: center;
 }
 
 /** Syntax highlighting styles */
