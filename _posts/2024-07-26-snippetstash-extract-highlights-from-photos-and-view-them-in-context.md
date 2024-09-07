@@ -9,6 +9,8 @@ I'm not sure exactly where I picked it up but I have a habit of highlighting boo
 
 After repeating this process several times it was clear that I was wasting my time. This shouldn't be so difficult. I realized that if I could digitize these highlights I could search, organize, and easily reference them whenever I wanted - No more flipping pages! I figured I should be able to build an app where I submit a photo and the text is OCR'd and any highlighted texts are extracted (that is at least once I learned the term OCR).
 
+<!--more-->
+
 I knew I needed to begin by validating the key feature first before building an entire app. I built a small python script to perform some preprocessing on an image and OCR it using `opencv` to test it out. The basic process was:
 
 1. Find the highlighted areas using some assumptions about the range of HSV values for a typical highlighter

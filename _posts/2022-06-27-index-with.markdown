@@ -16,6 +16,8 @@ months.index_with({})
 
 This pattern has generally served me quite well, but there is a bug hidden in plain sight.
 
+<!--more-->
+
 ```ruby
 months['Jan'][:days] = 31
 => ?
