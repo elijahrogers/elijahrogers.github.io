@@ -2,6 +2,16 @@
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   <link rel="stylesheet" href="{{ site.url }}/css/common.css">
   <script async src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+  <script>
+    window.op = window.op||function(...args){(window.op.q=window.op.q||[]).push(args);};
+    window.op('init', {
+      clientId: '6a961cea-b48d-4d3e-b334-9cea0e1c3cbc',
+      trackScreenViews: true,
+      trackOutgoingLinks: true,
+      trackAttributes: true,
+    });
+  </script>
+  <script src="https://openpanel.dev/op1.js" defer async></script>
   <body>
     <div class="nav">
       {%- include nav.html -%}
