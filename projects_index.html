@@ -3,6 +3,52 @@ layout: default
 title: Projects
 ---
 
+<div class="projects-container">
+<section class="project">
+  <header class="header">
+    <a href="https://addons.mozilla.org/en-US/firefox/addon/sleeping-policeman/">
+      <h1>Sleeping Policeman</h1>
+    </a>
+  </header>
+
+  <div class="main">
+    <img src="{{ site.url }}/assets/images/sleeping_policeman.png" class="image"  style="max-height: 700px;"></img>
+
+    <div>
+      <div class="ops">
+        <a href="{% post_url 2024-08-29-sleeping-policeman %}">
+          <i class="fas fa-hammer"></i>
+          Why I built it
+        </a>
+
+        <a href="https://addons.mozilla.org/en-US/firefox/addon/sleeping-policeman/">
+          <i class="fas fa-link"></i>
+          The Firefox extension
+        </a>
+      </div>
+
+      <div>
+        <p>
+          A tool to help you slow down the infinite scroll of Twitter and Reddit.
+        </p>
+
+        <p>
+          Many people try to limit their screen time and I'm sure I'm not the only one who found the existing tools lacking. Mostly, they consist of locking yourself out of accessing some websites after a certain amount of use or during certain hours of the day. The problem with these is that - as long as you have the unlock code - you still need to have the willpower to avoid turning them off.
+        </p>
+
+        <p>
+          Going cold turkey is also a viable option but most people don't want to stop using Twitter or Reddit entirely. Moderation is key. This led me down the path of making the content itself less interesting; to break down the carefully crafted feedback loop that leads to endless scrolling.
+        </p>
+
+        <p>
+          Sleeping Policeman is my attempt to create a gentile nudge to lower screen time. It slowly adds a delay to each request over the course of the day until content takes long enough to load that you find something better to do.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section class="project">
   <header class="header">
     <a href="https://www.snippetstash.app">
@@ -42,3 +88,4 @@ title: Projects
     </div>
   </div>
 </section>
+</div>

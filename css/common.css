@@ -150,6 +150,12 @@ img + em {
   text-align: center;
 }
 
+.projects-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+}
+
 .project {
   .header {
     margin-bottom: 1rem;
@@ -161,7 +167,7 @@ img + em {
     flex-direction: column;
 
     @media (min-width: 1024px) {
-      display: unset;
+      display: block;
     }
 
     .image {
