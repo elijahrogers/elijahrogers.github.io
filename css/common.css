@@ -7,6 +7,7 @@ body {
   color: #22333b;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .page-content, .page-footer {
@@ -95,7 +96,6 @@ blockquote {
   }
 
   .nav {
-    padding: 1rem;
     max-width: 25vw;
     order: initial;
   }
@@ -104,13 +104,17 @@ blockquote {
 .nav-inner {
   position: sticky;
   top: 0;
+  padding: 1rem;
 }
 
 .page-content {
   flex: 1;
   overflow-y: auto;
   height: 100vh;
-  padding: 2rem;
+
+  .wrapper {
+    padding: 2rem;
+  }
 }
 
 .post-title {
@@ -197,12 +201,22 @@ img + em {
   align-items: center;
   gap: 2rem;
   padding-top: 1rem;
+  padding: 2rem;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 
   .headshot {
     clip-path: circle(50%);
     height: 250px;
     width: 250px;
     border: 3px solid black;
+
+    @media only screen and (max-width: 600px) {
+      height: 150px;
+      width: 150px;
+    }
   }
 }
 
