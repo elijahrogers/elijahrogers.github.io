@@ -6,13 +6,54 @@ title: Projects
 <div class="projects-container">
 <section class="project">
   <header class="header">
+    <a href="https://mahoganychat.com">
+      <h1>Mahogany Chat</h1>
+    </a>
+  </header>
+  <div class="main">
+    <video src="{{ site.url }}/assets/videos/film_revenue.mp4" class="image"  style="max-height: 700px;" autoplay loop muted></video>
+
+    <div>
+      <div class="ops">
+        <a href="{% post_url 2025-10-03-i-spent-200-hours-building-a-postgres-chat-client %}">
+          <i class="fas fa-hammer"></i>
+          Building it
+        </a>
+
+        <a href="https://mahoganychat.com">
+          <i class="fas fa-link"></i>
+          The app itself
+        </a>
+      </div>
+
+      <div>
+        <p>
+          I can't be the only one who's received those Slack messages.
+        </p>
+        <ul>
+          <li>"Can you build me a report that shows..."</li>
+          <li>"Can you tell me how many..."</li>
+          <li>etc. etc.</li>
+        </ul>
+        <p>
+          I get it. People have questions and the simplest thing to do is ask the person who has access to the production database. I don't blame them. The problem is that it's incredibly distracting from my real job - building new features, fixing bugs, figuring out which "non-breaking" API change Stripe made this week that broke our integration.
+        </p>
+        <p>
+          I realized that things could be improved by providing them access to the data. Not directly of course. They don't even know what SQL stands for. But they're familiar with ChatGPT. So I created Mahogany Chat as just that - A way for non technical users to get insights from data without bugging developers, DBA's, engineers, etc.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="project">
+  <header class="header">
     <a href="https://addons.mozilla.org/en-US/firefox/addon/sleeping-policeman/">
       <h1>Sleeping Policeman</h1>
     </a>
   </header>
-
   <div class="main">
-    <img src="{{ site.url }}/assets/images/sleeping_policeman.png" class="image"  style="max-height: 700px;"></img>
+    <img src="{{ site.url }}/assets/images/sleeping_policeman.png" class="image"  style="float: right; margin-left: 2rem; margin-right: 0;"></img>
 
     <div>
       <div class="ops">
@@ -41,13 +82,12 @@ title: Projects
         </p>
 
         <p>
-          Sleeping Policeman is my attempt to create a gentile nudge to lower screen time. It slowly adds a delay to each request over the course of the day until content takes long enough to load that you find something better to do.
+          Sleeping Policeman is my attempt to create a gentle nudge to lower screen time. It slowly adds a delay to each request over the course of the day until content takes long enough to load that you find something better to do.
         </p>
       </div>
     </div>
   </div>
 </section>
-
 
 <section class="project">
   <header class="header">

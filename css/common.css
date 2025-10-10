@@ -23,6 +23,9 @@ p {
 ol, ul {
   font-size: 1.2rem;
   line-height: 1.5;
+  list-style-position: inside;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -226,7 +229,7 @@ img + em {
 }
 
 
-/** Syntax highlighting styles */
+/* Syntax highlighting styles */
 
 .highlight pre { background-color: #454a52; }
 .highlight .hll { background-color: #272822; }
