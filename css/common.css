@@ -55,9 +55,10 @@ a:visited, a:hover{
 }
 
 code, pre {
-  background-color: #454A52;
+  background-color: #122B3B;
   border: none;
   color: #eae0d5;
+  font-size: 1rem;
 }
 
 figure.highlight {
@@ -66,6 +67,7 @@ figure.highlight {
 
 code.language-plaintext {
   padding: .25rem;
+  border-radius: 0.25rem;
 }
 
 blockquote {
@@ -76,11 +78,20 @@ blockquote {
   background-color: #f6f8fa;
 }
 
-.highlight {
-  background-color: #454A52;
+div.highlight {
+  background-color: #122B3B;
   color: #eae0d5;
-  padding: .5rem;
+  padding: 1rem;
   overflow-x: scroll;
+  border-radius: 1rem;
+
+  @media (min-width: 1024px) {
+    padding: 1.5rem;
+  }
+
+  pre {
+    margin: 0;
+  }
 }
 
 .site-header {
@@ -231,7 +242,6 @@ img + em {
 
 /* Syntax highlighting styles */
 
-.highlight pre { background-color: #454a52; }
 .highlight .hll { background-color: #272822; }
 .highlight .c { color: #9e9ea0 } /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
