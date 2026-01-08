@@ -1,5 +1,5 @@
 <div class="nav-inner">
-  <div class="nav-main">
+  <div class="nav-title">
     <h1>
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
         {{ site.title | escape }}
@@ -9,15 +9,18 @@
       <p>{{- site.description | escape -}}</p>
     </div>
   </div>
-  <h3>
-    <a href="{% link about.html %}">About</a>
-  </h3>
-  <h3>
-    <a href="{% link posts_index.html %}">Posts</a>
-  </h3>
-  <h3>
-    <a href="{% link projects_index.html %}">Projects</a>
-  </h3>
+
+  <div class="nav-links">
+    <h3>
+      <a href="{% link about.html %}">About</a>
+    </h3>
+    <h3>
+      <a href="{% link posts_index.html %}">Posts</a>
+    </h3>
+    <h3>
+      <a href="{% link projects_index.html %}">Projects</a>
+    </h3>
+  </div>
 
   <div class="social">
     {%- include social.html -%}
