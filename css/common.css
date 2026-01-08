@@ -1,5 +1,19 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-VF.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-Italic-VF.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
 html, body {
-  font-family: "Cardo", "Helvetica Neue", Helvetica, apple-system, BlinkMacSystemFont, serif;
+  font-family: "Raleway", apple-system, BlinkMacSystemFont, sans-serif;
   background-color: #FFFAF6;
 }
 
