@@ -310,6 +310,19 @@ img + em {
   }
 }
 
+video {
+  max-height: 200px;
+  object-fit: contain;
+
+  @media (min-width: 600px) {
+    max-height: 300px;
+  }
+
+  @media (min-width: 1024px) {
+    max-height: 700px;
+  }
+}
+
 /*  About page */
 /* -------------------------------------------------------------------------- */
 .about-content {
